@@ -1,0 +1,17 @@
+{
+    "_comment" : "template recipe in json",
+    "Title" : "Pan Di Spagna",
+    "ImgUrl" : "https://firebasestorage.googleapis.com/v0/b/cristianspastry.appspot.com/o/MASSE%20MONTATE%2FPANDISPAGNA.jpeg?alt=media&token=c16db172-53bd-4f62-8c20-097acaf0bc0e&_gl=1*12tdaiu*_ga*OTQ4MjU3NDQ4LjE2ODMxMzM2MTM.*_ga_CW55HF8NVT*MTY4NjEzMDkwMC4xMS4xLjE2ODYxMzE0OTkuMC4wLjA.",
+    "Categoria" : "Masse Montate",
+    "Difficolta" : "2",
+    "TempoDiPreparazione" : "20 min",
+    "Ingredienti" : [
+        "Uova", 
+        "Zucchero",
+        "Farina"
+    ],
+    "Passaggi" : [
+        ""
+    ] ,
+    "Note" : " 'Nessuna Nota' "
+}
