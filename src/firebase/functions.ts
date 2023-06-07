@@ -3,10 +3,10 @@ import { DataSnapshot, onValue, ref, remove, set } from "firebase/database";
 import { addDoc, collection, doc, DocumentReference, getDocs, updateDoc } from "firebase/firestore";
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { uid } from "uid";
-import { Db,Auth } from './config'
 
 export class FirebaseFunctions {
-    Login(email: string, password: string) {
+
+    /*   Login(email: string, password: string) {
         return signInWithEmailAndPassword(Auth, email, password)
     }
     Logout(setUser: any) { }
@@ -51,9 +51,12 @@ export class FirebaseFunctions {
 
     DeleteDbRecipe(ricetta : any) { 
         return  console.log("Ricetta eliminata")
-    }
+    }*/
 
 }
+
+
+
 /*
 const Login = (email:string,password:string) => {
     return signInWithEmailAndPassword(Auth,email,password)
