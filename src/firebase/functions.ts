@@ -1,8 +1,3 @@
-import { signInWithEmailAndPassword, signOut } from "firebase/auth"
-import { DataSnapshot, onValue, ref, remove, set } from "firebase/database";
-import { addDoc, collection, doc, DocumentReference, getDocs, updateDoc } from "firebase/firestore";
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { uid } from "uid";
 
 export class FirebaseFunctions {
 
