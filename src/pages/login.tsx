@@ -1,34 +1,20 @@
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import { useAuth } from '@/pages/Auth/AuthContext'
-import {FirebaseFunctions} from '@/firebase/functions'
+
+
+
 const Login = () => {
   const router = useRouter()
-  const { user, login } = useAuth()
+  //const { user, login } = useAuth()
   const [errMsg, setErrMsg] = useState("")
   const [success, setSuccess] = useState<boolean>(false)
   const [data, setData] = useState({
     email: '',
     password: '',
   })
-
-  const handleLogin = async (e: any) => {
-    e.preventDefault()
-
-    console.log(user)
-    try {
-      //await new FirebaseFunctions().Login(data.email,data.password)//login(data.email, data.password)
-      setSuccess(true)
-      router.push('/')
-    } catch (errMsg) {
-      setSuccess(false)
-      setErrMsg("Autenticazione non avvenuta con successo");
-      console.log(setErrMsg)
-    }
-  }
-
-  const goRouter = () => {
-    router.push('/');
+  
+  const handleLogin = () => {
+    console.log(data.email + "" + data.password)
   }
 
   return (
@@ -84,7 +70,6 @@ const Login = () => {
           <button
             type="submit"
             className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-            onClick={() => goRouter()}
           >
             Accedi
           </button>
